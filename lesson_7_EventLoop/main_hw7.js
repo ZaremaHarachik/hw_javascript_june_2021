@@ -251,7 +251,7 @@ function goToWork(weekend,cb){
        // ASYNC AWAIT
 
 
-/*function startDay(haveMood) {
+function startDay(haveMood) {
     return new Promise((resolve,reject)=>{
         console.log("Початок гарного дня.");
         setTimeout(()=>{
@@ -344,7 +344,7 @@ function goToWork(weekend){
 
 
  async function xxx(){
-     const haveMood = await startDay(1);
+    try { const haveMood = await startDay(1);
      console.log(haveMood);
      const eat = await breakfast(1);
      console.log(eat);
@@ -358,8 +358,14 @@ function goToWork(weekend){
      console.log(documents);
      const weekend = await goToWork(1);
      console.log(weekend);
+ }catch(err){
+    }
  }
-xxx();*/
+
+// xxx().catch((err)=>{
+//     console.log(err);
+// })
+ xxx();
 
 
 
