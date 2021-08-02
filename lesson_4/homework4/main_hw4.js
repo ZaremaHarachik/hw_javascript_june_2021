@@ -1,13 +1,15 @@
 
 // - створити функцію, яка генерує масив рандомних числових цілих значень в діапазоні від 0 до 100.
 
-/*function randomArray() {
+function randomArray() {
     let arr = [];
     for (let i = 0; i < 10; i++) {
-        arr[i] = Math.round(Math.random()*100);
+        arr[i] = Math.round(Math.random() * 100);
     }
     return arr;
-}*/
+}
+    randomArray();
+
 
 
 // - Змінти попередню функцію, щоб діапазон можна було визначити через аргументи.
